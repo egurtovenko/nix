@@ -1,12 +1,15 @@
 $advantages-padding:          40px 0;
 $descr-title-color:           #000;
 $descr-title-fz:              20px;
+$descr-title-fz-m:            16px;
 $svg-border:                  3px double #d6d6d6;
 $svg-img-mb:                  20px;
 $border-r:                    50%;
 $adv-img-w:                   160px;
 $adv-img-h:                   160px;
-
+$icon-fz:                     60px;
+$icon-fz-m:                    50px;
+$descr-width:                 65%;
 
 .advantages {
   padding: $advantages-padding;
@@ -22,12 +25,12 @@ $adv-img-h:                   160px;
       display: flex;
       i {
         margin: auto;
-        font-size: 60px;
+        font-size: $icon-fz;
         color: $brand-primary;
       }
     }
     .advantages__descr {
-      width: 65%;
+      width: $descr-width;
       margin: 0 auto;
       .descr__title {
         display: block;
@@ -55,14 +58,14 @@ $adv-img-h:                   160px;
         margin: 15px 0;
         height: auto;
         i {
-          font-size: 50px;
+          font-size: $icon-fz-m;
           margin: 0;
         }
       }
       .advantages__descr {
         .descr__title {
           text-align: left;
-          font-size: 16px;
+          font-size: $descr-title-fz-m;
         }
         .descr__text {
           text-align: left;
