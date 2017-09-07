@@ -1,0 +1,37 @@
+$descr_title_color:           #000;
+$descr_title_fz:              20px;
+$svg_border:                  3px double #d6d6d6;
+$svg_img_mb:                  20px;
+
+.advantages {
+  padding: 40px 0;
+  .advantages__item {
+    .advantages__img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: $svg_border;
+      margin: auto auto $svg_img_mb;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      i {
+        margin: auto;
+        font-size: 60px;
+        color: $brand-primary;
+      }
+    }
+    .advantages__descr {
+      .descr__title {
+        display: block;
+        font-size: $descr_title_fz;
+        font-weight: bold;
+        color: $descr_title_color;
+      }
+      .descr__text {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

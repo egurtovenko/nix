@@ -1,0 +1,20 @@
+{
+  "name": "nix",
+  "description": "nix test",
+  "main": "index.js",
+  "authors": [
+    "egurtovenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/egurtovenko/nix",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

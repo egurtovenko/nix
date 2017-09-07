@@ -1,0 +1,8 @@
+$headings_color:           #000;
+$headings_mb:              40px;
+
+.heading {
+  font-size: 30px;
+  color: $headings_color;
+  margin-bottom: $headings_mb;
+}
