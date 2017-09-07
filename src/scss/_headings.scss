@@ -1,8 +1,16 @@
 $headings_color:           #000;
 $headings_mb:              40px;
+$heading-fz:               30px;
 
 .heading {
-  font-size: 30px;
+  font-size: $heading-fz;
   color: $headings_color;
   margin-bottom: $headings_mb;
+}
+
+
+@media (max-width: $screen-xs-max) {
+  .heading {
+    font-size: 20px;
+  }
 }

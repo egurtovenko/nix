@@ -1,17 +1,22 @@
-$descr_title_color:           #000;
-$descr_title_fz:              20px;
-$svg_border:                  3px double #d6d6d6;
-$svg_img_mb:                  20px;
+$advantages-padding:          40px 0;
+$descr-title-color:           #000;
+$descr-title-fz:              20px;
+$svg-border:                  3px double #d6d6d6;
+$svg-img-mb:                  20px;
+$border-r:                    50%;
+$adv-img-w:                   160px;
+$adv-img-h:                   160px;
+
 
 .advantages {
-  padding: 40px 0;
+  padding: $advantages-padding;
   .advantages__item {
     .advantages__img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: $svg_border;
-      margin: auto auto $svg_img_mb;
+      width: $adv-img-w;
+      height: $adv-img-h;
+      border-radius: $border-r;
+      border: $svg-border;
+      margin: auto auto $svg-img-mb;
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
@@ -22,15 +27,46 @@ $svg_img_mb:                  20px;
       }
     }
     .advantages__descr {
+      width: 65%;
+      margin: 0 auto;
       .descr__title {
         display: block;
-        font-size: $descr_title_fz;
+        font-size: $descr-title-fz;
         font-weight: bold;
-        color: $descr_title_color;
+        color: $descr-title-color;
       }
       .descr__text {
         display: block;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .advantages {
+    .advantages__item {
+      display: flex;
+      margin-bottom: 20px;
+      .advantages__img {
+        border: none;
+        border-radius: 0;
+        width: 35%;
+        margin: 15px 0;
+        height: auto;
+        i {
+          font-size: 50px;
+          margin: 0;
+        }
+      }
+      .advantages__descr {
+        .descr__title {
+          text-align: left;
+          font-size: 16px;
+        }
+        .descr__text {
+          text-align: left;
+        }
       }
     }
   }
