@@ -1,0 +1,7 @@
+$features-block-padding:          40px 0;
+$features-block-bg:               #f5f5f5;
+
+.features-block {
+  background: $features-block-bg;
+  padding: $features-block-padding;
+}
