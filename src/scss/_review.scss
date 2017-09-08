@@ -1,12 +1,30 @@
+$review-padding:          40px 0;
+$dots-fz:                 10px;
+$dots-color:              #898989;
+$user-color:              $headings-color;
+$user-fz:                 16px;
+$stars-color:             #f7dd1d;
+
 .review {
-  padding-top: 40px;
+  padding: $review-padding;
   .review__slider {
     .slick-dots {
       li button {
         &:before {
-          font-size: 10px;
-          color: #000;
+          font-size: $dots-fz;
+          color: $dots-color;
         }
+      }
+    }
+    .review__item {
+      padding: 25px;
+      .review__user {
+        color: $user-color;
+        font-size: $user-fz;
+      }
+      .review__stars {
+        color: $stars-color;
+        margin-bottom: 15px;
       }
     }
   }

@@ -2,11 +2,8 @@
  * Created by egurtovenko on 08.09.17.
  */
 $(".review__slider").slick({
-
-    // normal options...
     infinite: false,
     dots: true,
-    // the magic
     responsive: [{
 
         breakpoint: 1024,
@@ -17,7 +14,7 @@ $(".review__slider").slick({
 
     }, {
 
-        breakpoint: 600,
+        breakpoint: 780,
         settings: {
             slidesToShow: 2,
             dots: true
@@ -25,8 +22,10 @@ $(".review__slider").slick({
 
     }, {
 
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-
+        breakpoint: 321,
+        settings: {
+            slidesToShow: 1,
+            dots: true
+        }
     }]
 });
