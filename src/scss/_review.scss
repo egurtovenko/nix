@@ -1,0 +1,13 @@
+.review {
+  padding-top: 40px;
+  .review__slider {
+    .slick-dots {
+      li button {
+        &:before {
+          font-size: 10px;
+          color: #000;
+        }
+      }
+    }
+  }
+}
