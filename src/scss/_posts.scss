@@ -2,21 +2,27 @@ $post-bg:         #f5f5f5;
 $post-padding:    40px 0;
 $post-img-br:     6px;
 $post-margin:      15px;
-$post-title-fz:    18px;
+$post-title-fz:    20px;
 
 
 .posts {
   background: $post-bg;
   padding: $post-padding;
+  .slick-dots {
+    li button {
+      &:before {
+        font-size: $dots-fz;
+        color: $dots-color;
+      }
+    }
+  }
   .posts__item {
     margin-bottom: $post-margin;
+    padding: 30px;
     .post__img {
       border-radius: $post-img-br;
       overflow: hidden;
       margin-bottom: $post-margin;
-      img {
-        width: 100%;
-      }
     }
     .posts__title {
       font-size: $post-title-fz;
@@ -34,8 +40,10 @@ $post-title-fz:    18px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
   .posts {
-
+    .posts__item {
+      padding: 5px;
+    }
   }
 }
