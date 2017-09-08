@@ -6,35 +6,96 @@ $f-icon-fz:                       85px;
 $features-padding:                60px;
 $f-descr-title-fz:                20px;
 $f-descr-title-color:             $headings-color;
+$padding-vertical:                15px;
+$padding-horizontal:              60px;
+$font-size:                       $font-size-base;
+$border-radius:                   5px;
+$line-height:                     $line-height-base;
 
 .features-block {
   background: $features-block-bg;
   padding: $features-block-padding;
-  .features {
-    background: $features-bg;
-    border-radius: $features-br;
-    padding: $features-padding;
-    &__icon {
-      margin-bottom: 35px;
-      display: flex;
-      i {
-        font-size: $f-icon-fz;
-        color: $brand-second;
-        margin: auto;
+  .features-row {
+    .features {
+      background: $features-bg;
+      border-radius: $features-br;
+      padding: $features-padding;
+      &__icon {
+        margin-bottom: 35px;
+        display: flex;
+        i {
+          font-size: $f-icon-fz;
+          color: $brand-second;
+          margin: auto;
+        }
+      }
+      &__descr {
+        .f-descr-text {
+          display: block;
+          text-align: center;
+        }
+        .f-descr-title {
+          display: block;
+          font-weight: bold;
+          font-size: $f-descr-title-fz;
+          text-align: center;
+          color: $f-descr-title-color;
+          margin-bottom: 15px;
+        }
       }
     }
-    &__descr {
-      .f-descr-text {
-        display: block;
-        text-align: center;
+  }
+  .btn-wrap {
+    padding: 50px 0;
+    .btn-lg {
+      border-color: $brand-primary;
+      @include button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius);
+      &:hover {
+        background: $brand-second;
+        border-color: $brand-second;
       }
-      .f-descr-title {
-        display: block;
-        font-weight: bold;
-        font-size: $f-descr-title-fz;
-        text-align: center;
-        color: $f-descr-title-color;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .features-block {
+    .features-row {
+      display: table-row-group;
+      .features {
+        padding: 30px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .features-block {
+    .features-row {
+      .features {
+        display: flex;
+        padding: 10px;
         margin-bottom: 15px;
+        &__icon {
+          width: 40%;
+          margin-bottom: 0;
+        }
+        &__descr {
+          width: 60%;
+          .f-descr-title {
+            font-size: 16px;
+            text-align: left;
+          }
+          .f-descr-text {
+            text-align: left;
+          }
+        }
+      }
+    }
+    .btn-wrap {
+      padding: 0;
+      .btn-lg {
+        width: 100%;
       }
     }
   }
