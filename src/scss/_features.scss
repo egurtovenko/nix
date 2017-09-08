@@ -3,7 +3,9 @@ $features-block-bg:               #f5f5f5;
 $features-bg:                     #fff;
 $features-br:                     6px;
 $f-icon-fz:                       85px;
-
+$features-padding:                60px;
+$f-descr-title-fz:                20px;
+$f-descr-title-color:             $headings-color;
 
 .features-block {
   background: $features-block-bg;
@@ -11,7 +13,7 @@ $f-icon-fz:                       85px;
   .features {
     background: $features-bg;
     border-radius: $features-br;
-    padding: 35px 60px;
+    padding: $features-padding;
     &__icon {
       margin-bottom: 35px;
       display: flex;
@@ -22,14 +24,17 @@ $f-icon-fz:                       85px;
       }
     }
     &__descr {
-      text-align: center;
-      .f-descr__title {
+      .f-descr-text {
+        display: block;
+        text-align: center;
+      }
+      .f-descr-title {
         display: block;
         font-weight: bold;
-        font-size: 30px;
-      }
-      .f-descr__text {
-        display: block;
+        font-size: $f-descr-title-fz;
+        text-align: center;
+        color: $f-descr-title-color;
+        margin-bottom: 15px;
       }
     }
   }
