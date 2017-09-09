@@ -13,10 +13,25 @@ $menu_width: 200px !default;
     height: 100%;
     top: 0;
     z-index: 9999;
-    background: #191918;
+    background: #323232;
     overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
-
+    ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    .white-links {
+        li {
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .login {
+        color: #fff;
+    }
     a{
         display: block;
         color: #b3b3b1;

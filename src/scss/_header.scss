@@ -68,12 +68,13 @@ $pushy-btn-fz:            30px;
         font-size: 38px;
       }
     }
-    .header__input {
+    .header__input,
+    .header__input--mobile {
       width: 50%;
       margin: auto;
       .input-group {
         position: relative;
-        .fa {
+        .fa-map-marker {
           display: inline-block;
           position: absolute;
           transform: translateY(-50%);
@@ -100,6 +101,9 @@ $pushy-btn-fz:            30px;
         }
       }
     }
+    .header__input--mobile {
+      display: none;
+    }
   }
 }
 ::-webkit-input-placeholder {font-size: 14px;}
@@ -124,6 +128,39 @@ $pushy-btn-fz:            30px;
       }
       .header__input {
         width: 85%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    .header__container {
+      .header__navi {
+        .header__list {
+          display: none;
+        }
+        .site-name {
+          display: none;
+        }
+        .header__btn {
+          display: none;
+        }
+      }
+      .menu-btn {
+        display: block;
+      }
+      .header__input {
+        display: none;
+      }
+      .header__input--mobile {
+        display: block;
+        width: 85%;
+        .input-group {
+          .btn-primary {
+            padding: 10px 20px;
+          }
+        }
       }
     }
   }
