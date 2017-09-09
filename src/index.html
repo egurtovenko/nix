@@ -13,11 +13,31 @@
 <body>
 	<header class="header">
     <video poster="img/bg-top.jpg" autoplay="true" loop>
-      <source src="video/test.mp4" type="video/mp4">
+      <source src="video/Orange-Ripple.mp4" type="video/mp4">
+      <source src="video/Orange-Ripple.webm" type="video/webm">
     </video>
 		<div class="header__container">
 			<div class="container">
 					<div class="header__navi">
+						<nav class="pushy pushy-left">
+							<div class="pushy-content">
+								<ul>
+									<!-- Submenu -->
+									<li class="pushy-submenu">
+										<button>Submenu</button>
+										<ul>
+											<li class="pushy-link"><a href="#">Item 1</a></li>
+											<li class="pushy-link"><a href="#">Item 2</a></li>
+											<li class="pushy-link"><a href="#">Item 3</a></li>
+										</ul>
+									</li>
+									<li class="pushy-link"><a href="#">Item 1</a></li>
+									<li class="pushy-link"><a href="#">Item 2</a></li>
+								</ul>
+							</div>
+						</nav>
+						<div class="site-overlay"></div>
+						<a class="menu-btn">&#9776; SiteName</button>
 						<div class="logo"><a href="#" class="site-name">SiteName</a></div>
 						<ul class="header__list">
 							<li class="header__list-item"><a href="#">For Businesses</a></li>
@@ -269,6 +289,7 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/pushy.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

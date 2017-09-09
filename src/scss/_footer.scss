@@ -26,6 +26,10 @@ $footer-padding:    40px 0;
   display: block;
   font-size: 30px;
   margin-bottom: 20px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 }
 @media (max-width: 575px) {
   .site-name {
