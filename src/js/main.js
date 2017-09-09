@@ -1,6 +1,8 @@
 /**
  * Created by egurtovenko on 08.09.17.
  */
+$('header').height($(window).height());
+
 $(".review__slider").slick({
     infinite: false,
     dots: true,

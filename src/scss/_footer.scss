@@ -4,11 +4,6 @@ $footer-padding:    40px 0;
 .footer {
   background: $footer-bg;
   padding: $footer-padding;
-  .site-name {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
   .copyright {
     font-size: $font-size-small;
     color: $text-color;
@@ -27,14 +22,18 @@ $footer-padding:    40px 0;
     }
   }
 }
-
+.site-name {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 @media (max-width: 575px) {
+  .site-name {
+    text-align: center;
+  }
   .footer {
     .footer__list {
       display: none;
-    }
-    .site-name {
-      text-align: center;
     }
     .copyright {
       text-align: center;
