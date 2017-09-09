@@ -194,14 +194,14 @@ $input-bg-disabled:              $gray-lighter !default;
 //** Text color for `<input>`s
 $input-color:                    $gray !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   transparent !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius:            $border-radius-base !default;
+$input-border-radius:            6px !default;
 //** Large `.form-control` border radius
-$input-border-radius-large:      $border-radius-large !default;
+$input-border-radius-large:      6px !default;
 //** Small `.form-control` border radius
 $input-border-radius-small:      $border-radius-small !default;
 

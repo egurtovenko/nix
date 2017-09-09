@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "slick-carousel": "^1.7.1"
+    "slick-carousel": "^1.7.1",
+    "pushy": "^1.1.2"
   }
 }

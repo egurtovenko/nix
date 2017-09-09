@@ -1,5 +1,5 @@
 .header {
-  //height: 100vh;
+  overflow: hidden;
   video {
     position: relative;
     top: 50%;
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     .header__navi {
       margin-bottom: 20%;
       padding: 40px 0;
@@ -32,6 +32,7 @@
         list-style-type: none;
         .header__list-item {
           a {
+            cursor: pointer;
             &:hover {
               color: $brand-second;
               text-decoration: none;
@@ -51,13 +52,49 @@
       }
     }
     .header__heading {
+      margin-bottom: 50px;
       color: #fff;
       .main-title {
         margin-bottom: 20px;
         font-size: 38px;
       }
     }
+    .header__input {
+      width: 50%;
+      margin: auto;
+      .input-group {
+        position: relative;
+        .fa {
+          display: inline-block;
+          position: absolute;
+          transform: translateY(-50%);
+          top: 50%;
+          left: 1%;
+          color: grey;
+          z-index: 11;
+          font-size: 20px;
+        }
+        .form-control {
+          padding-left: 20px;
+          border-bottom-left-radius: 6px;
+          border-top-left-radius: 6px;
+        }
+        .btn-primary {
+          background: $brand-second;
+          border-color: $brand-second;
+          padding: 10px 70px;
+          font-size: 14px;
+          &:hover {
+            background: $brand-primary;
+            border-color: $brand-primary;
+          }
+        }
+      }
+    }
   }
 }
-
+::-webkit-input-placeholder {font-size: 14px;}
+::-moz-placeholder          {font-size: 14px;}/* Firefox 19+ */
+:-moz-placeholder           {font-size: 14px;}/* Firefox 18- */
+:-ms-input-placeholder      {font-size: 14px;}
 
